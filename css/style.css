@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
@@ -18,28 +16,23 @@
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
-
 *::selection {
     background: var(--main-color);
     color: var(--bg-color);
 }
-
 .dark-mode {
     --bg-color: #0b061f;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
 }
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-
 body {
     background: var(--bg-color);
     color: var(--text-color);
 }
-
 .header {
     position: fixed;
     top: 0;
@@ -52,19 +45,16 @@ body {
     z-index: 100;
     transition: .5s;
 }
-
 .header.sticky {
     background: var(--bg-color);
     box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
-
 .logo {
     font-size: 2.5rem;
     color: var(--main-color);
     font-weight: 600;
     margin-right: auto;
 }
-
 .navbar a {
     position: relative;
     font-size: 1.7rem;
@@ -72,15 +62,12 @@ body {
     font-weight: 500;
     margin-right: 3.5rem;
 }
-
 .header.sticky .navbar a {
     color: var(--text-color);
 }
-
 .header.sticky .navbar a.active {
     color: var(--main-color);
 }
-
 .navbar a.active::before {
     content: '';
     position: absolute;
@@ -90,59 +77,48 @@ body {
     height: .2rem;
     background: var(--white-color);
 }
-
 .header.sticky .navbar a::before {
     background: var(--main-color);
     opacity: .7;
 }
-
 #darkMode-icon {
     font-size: 2.4rem;
     color: var(--white-color);
     cursor: pointer;
 }
-
 .header.sticky #darkMode-icon {
     color: var(--text-color);
     opacity: .9;
 }
-
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
 }
-
 section {
     min-height: 100vh;
     padding: 10rem 7% 2rem;
 }
-
 .home {
     display: flex;
     align-items: center;
 }
-
 .home .home-content {
     max-width: 44rem;
 }
-
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
     line-height: .3;
 }
-
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
 }
-
 .home-content p {
     font-size: 1.6rem;
 }
-
 .home-content .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -158,12 +134,10 @@ section {
     margin: 2.5rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
-
 .home-content .social-media a:hover {
     background: var(--main-color);
     color: var(--white-color);
 }
-
 .btn {
     display: inline-block;
     padding: 1.2rem 2.8rem;
@@ -177,13 +151,11 @@ section {
     border: .2rem solid transparent;
     transition: .5s ease;
 }
-
 .btn:hover {
     background: transparent;
     color: var(--main-color);
     border-color: var(--main-color);
 }
-
 .home .profession-container {
     position: absolute;
     top: 50%;
@@ -194,7 +166,6 @@ section {
     overflow: hidden;
     pointer-events: none;
 }
-
 .home .profession-container .profession-box {
     position: absolute;
     top: 0;
@@ -206,7 +177,6 @@ section {
     align-items: center;
     animation: professionRotate 13s ease-out infinite;
 }
-
 @keyframes professionRotate {
 
     0%,
@@ -233,7 +203,6 @@ section {
         transform: rotate(-360deg);
     }
 }
-
 .home .profession-box .profession {
     position: absolute;
     left: 0;
@@ -246,26 +215,21 @@ section {
     background: var(--bg-color);
     padding: 13px 0;
 }
-
 .home .profession-box .profession:nth-child(1) i {
     margin-right: 15px;
 }
-
 .home .profession-box .profession:nth-child(2),
 .home .profession-box .profession:nth-child(4) {
     padding-bottom: 20px;
 }
-
 .home .profession i {
     font-size: 3.8rem;
 }
-
 .home .profession h3 {
     font-size: 3.2rem;
     line-height: 1;
     font-weight: 600;
 }
-
 .home .profession-box .circle {
     width: 560px;
     height: 560px;
@@ -273,7 +237,6 @@ section {
     border-radius: 50%;
     z-index: -1;
 }
-
 .home .profession-container .overlay {
     position: absolute;
     top: 0;
@@ -285,7 +248,6 @@ section {
     border-bottom: 50vh solid var(--main-color);
     border-left: 384px solid transparent;
 }
-
 .home-img img {
     position: absolute;
     bottom: 0;
@@ -294,50 +256,40 @@ section {
     max-width: 480px;
     max-height: 100vh;
 }
-
 span {
     color: var(--main-color);
 }
-
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
 }
-
 .about-img img {
     width: 40vw;
 }
-
 .heading {
     font-size: 4.5rem;
     text-align: center;
 }
-
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
 }
-
 .about-content h3 {
     font-size: 2rem;
 }
-
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-
 .services {
     min-height: auto;
     padding-bottom: 10rem;
 }
-
 .services h2 {
     margin-bottom: 5rem;
 }
-
 .services .services-container {
     display: flex;
     justify-content: center;
@@ -345,7 +297,6 @@ span {
     flex-wrap: wrap;
     gap: 2rem;
 }
-
 .services-container .services-box {
     flex: 1 1 30rem;
     background: var(--bg-color);
@@ -357,47 +308,38 @@ span {
     border-bottom: .6rem solid var(--main-color);
     transition: .5s ease;
 }
-
 .services-container .services-box:hover {
     box-shadow: 0 .1rem 2rem var(--shadow-color);
     transform: scale(1.02);
 }
-
 .services-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
-
 .services-box h3 {
     font-size: 2.6rem;
     transition: .5s ease;
 }
-
 .services-box:hover h3 {
     color: var(--main-color);
 }
-
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
-
 .portfolio {
     min-height: auto;
     padding-bottom: 10rem;
 }
-
 .portfolio h2 {
     margin-bottom: 4rem;
 }
-
 .portfolio .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
-
 .portfolio-container .portfolio-box {
     position: relative;
     display: flex;
@@ -405,16 +347,13 @@ span {
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
 }
-
 .portfolio-box img {
     width: 100%;
     transition: .5s ease;
 }
-
 .portfolio-box:hover img {
     transform: scale(1.1);
 }
-
 .portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
@@ -432,20 +371,16 @@ span {
     opacity: 0;
     transition: .5s ease;
 }
-
 .portfolio-box:hover .portfolio-layer {
     opacity: 1;
 }
-
 .portfolio-layer h4 {
     font-size: 3rem;
 }
-
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
-
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
@@ -455,12 +390,10 @@ span {
     background: var(--white-color);
     border-radius: 50%;
 }
-
 .portfolio-layer a i {
     font-size: 2rem;
     color: #333;
 }
-
 .testimonial-container {
     display: flex;
     align-items: center;
@@ -468,20 +401,17 @@ span {
     width: 100%;
     padding: 5rem 1rem;
 }
-
 .testimonial-container .testimonial-wrapper {
     position: relative;
     max-width: 90rem;
     width: 100%;
     padding: 5rem;
 }
-
 .testimonial-wrapper .testimonial-box {
     padding: 1rem;
     border-radius: 2rem;
     overflow: hidden;
 }
-
 .testimonial-content .testimonial-slide {
     display: flex;
     align-items: center;
@@ -493,7 +423,6 @@ span {
     border-top: .8rem solid var(--main-color);
     border-bottom: .8rem solid var(--main-color);
 }
-
 .testimonial-slide img {
     width: 14rem;
     height: 14rem;
@@ -502,60 +431,48 @@ span {
     border: .5rem solid var(--bg-color);
     outline: .5rem solid var(--main-color);
 }
-
 .testimonial-slide h3 {
     font-size: 2.5rem;
     margin: 2rem 0;
 }
-
 .testimonial-slide p {
     font-size: 1.4rem;
     text-align: center;
 }
-
 .testimonial-box .swiper-button-next,
 .testimonial-box .swiper-button-prev {
     color: var(--main-color);
 }
-
 .testimonial-box .swiper-button-next {
     right: 0;
 }
-
 .testimonial-box .swiper-button-prev {
     left: 0;
 }
-
 .testimonial-box .swiper-pagination-bullet {
     background: rgba(0, 0, 0, .8);
 }
-
 .testimonial-box .swiper-pagination-bullet-active {
     background: var(--main-color);
 }
-
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
 }
-
 .contact h2 {
     margin-bottom: 3rem;
 }
-
 .contact form {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
 }
-
 .contact form .input-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .contact form .input-box input,
 .contact form textarea {
     width: 100%;
@@ -567,20 +484,16 @@ span {
     margin: .7rem 0;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
 }
-
 .contact form .input-box input {
     width: 49%;
 }
-
 .contact form textarea {
     resize: none;
 }
-
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
 }
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -589,12 +502,10 @@ span {
     padding: 2rem 7%;
     background: var(--main-color);
 }
-
 .footer-text p {
     font-size: 1.6rem;
     color: var(--white-color);
 }
-
 .footer-iconTop a {
     display: inline-flex;
     justify-content: center;
@@ -606,18 +517,13 @@ span {
     outline: .2rem solid transparent;
     transition: .5s ease;
 }
-
 .footer-iconTop a:hover {
     outline-color: var(--white-color);
 }
-
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: #333;
 }
-
-
-/* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -635,7 +541,6 @@ span {
         right: 0;
     }
 }
-
 @media (max-width: 1100px) {
     .home .profession-container .profession-box {
         right: -15%;
@@ -645,7 +550,6 @@ span {
         max-width: 420px;
     }
 }
-
 @media (max-width: 1024px) {
     .header {
         padding: 2rem 3%;
@@ -667,7 +571,6 @@ span {
         max-width: 400px;
     }
 }
-
 @media (max-width: 991px) {
 
     .navbar a:nth-child(1) {
@@ -699,7 +602,6 @@ span {
         padding: 2rem 3%;
     }
 }
-
 @media (max-width: 896px) {
     .navbar a:nth-child(2) {
         color: var(--main-color);
@@ -713,19 +615,16 @@ span {
         right: -43%;
     }
 }
-
 @media (max-width: 879px) {
     .portfolio .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (max-width: 780px) {
     .navbar a:nth-child(2) {
         color: var(--white-color);
     }
 }
-
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -875,13 +774,11 @@ span {
         display: none;
     }
 }
-
 @media (max-width: 580px) {
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
 }
-
 @media (max-width: 450px) {
     html {
         font-size: 50%;
@@ -924,13 +821,11 @@ span {
         margin-top: 2rem;
     }
 }
-
 @media (max-width: 365px) {
     .about-img img {
         width: 90vw;
     }
 }
-
 @media (max-width: 315px) {
     .home-content h1 {
         font-size: 4.5rem;
